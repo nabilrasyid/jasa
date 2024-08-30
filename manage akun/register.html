@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- flobite -->
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+
+    <!-- alpine js -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<body>
+    <div class="min-h-screen flex flex-col sm:justify-center items-center pt-6 sm:pt-0 bg-[#F3F3F3]">
+        <div>
+            <a href="/">
+                <img src="idekite-oren.png" width="150px">
+            </a>
+        </div>
+
+        <div class="w-full sm:max-w-md mt-6 px-6 py-4 bg-white shadow-md overflow-hidden sm:rounded-lg">
+            <form method="POST" action="http://127.0.0.1:8000/register">
+    <input type="hidden" name="_token" value="aS4uM9b29MnEjK9g3f7BHjHjrOVFVVbWLCXvCC0x" autocomplete="off">
+    <!-- Name -->
+    <div>
+        <label class="block font-medium text-sm text-gray-700" for="name">
+Name
+</label>
+        <input  class="border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 rounded-md shadow-sm block mt-1 w-full" id="name" type="text" name="name" required="required" autofocus="autofocus" autocomplete="name">
+                </div>
+
+    <!-- Email Address -->
+    <div class="mt-4">
+        <label class="block font-medium text-sm text-gray-700" for="email">
+Email
+</label>
+        <input  class="border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 rounded-md shadow-sm block mt-1 w-full" id="email" type="email" name="email" required="required" autocomplete="username">
+                </div>
+
+    <!-- Password -->
+    <div class="mt-4">
+        <label class="block font-medium text-sm text-gray-700" for="password">
+Password
+</label>
+
+        <input  class="border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 rounded-md shadow-sm block mt-1 w-full" id="password" type="password" name="password" required="required" autocomplete="new-password">
+
+                </div>
+
+    <!-- Confirm Password -->
+    <div class="mt-4">
+        <label class="block font-medium text-sm text-gray-700" for="password_confirmation">
+Confirm Password
+</label>
+
+        <input  class="border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 rounded-md shadow-sm block mt-1 w-full" id="password_confirmation" type="password" name="password_confirmation" required="required" autocomplete="new-password">
+
+                </div>
+
+    <div class="flex items-center justify-end mt-4">
+        <a class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" href="http://127.0.0.1:8000/login">
+            Already registered?
+        </a>
+
+        <button type="submit" class="border-2 border-[#4B65FF] text-[#4B65FF] rounded-md hover:text-white hover:bg-[#4B65FF] px-5 py-1 ms-4">
+Register
+</button>
+    </div>
+</form>
+        </div>
+        </div>
+</body>
+</html>
